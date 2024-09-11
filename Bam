@@ -38,12 +38,13 @@ Clear-Host
 
 Write-Host "";
 Write-Host "";
-Write-Host -ForegroundColor Red "‎Bavaro BAM" -NoNewLine
+Write-Host -ForegroundColor Red " Estas Seguro, No Es Un Virus - BAVARO " -NoNewLine
+Write-Host -ForegroundColor Green " discord.gg/astralmc";
 Write-Host "";
 
 function Test-Admin {;$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent());$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator);}
 if (!(Test-Admin)) {
-    Write-Warning "Ejecutar Como Admin"
+    Write-Warning "Brother ejecutalo como ADMIN :V"
     Start-Sleep 10
     Exit
 }
