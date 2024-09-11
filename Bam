@@ -38,7 +38,7 @@ Clear-Host
 
 Write-Host "";
 Write-Host "";
-Write-Host -ForegroundColor Yellow "‎Bavaro BAM" -NoNewLine
+Write-Host -ForegroundColor Red "‎Bavaro BAM" -NoNewLine
 Write-Host "";
 
 function Test-Admin {;$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent());$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator);}
